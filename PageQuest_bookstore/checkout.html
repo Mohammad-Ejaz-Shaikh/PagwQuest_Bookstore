@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PageQuest — Checkout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">📗 PageQuest</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="books.html">Books</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="checkout-section">
+      <h2>Checkout</h2>
+
+      <div class="checkout-layout">
+        <form class="checkout-form" onsubmit="handleCheckout(event)">
+          <label>Full name</label>
+          <input type="text" required />
+
+          <label>Email</label>
+          <input type="email" required />
+
+          <label>Shipping address</label>
+          <textarea required></textarea>
+
+          <label>Payment</label>
+          <select required>
+            <option>Credit / Debit Card</option>
+            <option>UPI</option>
+            <option>Cash on Delivery</option>
+          </select>
+
+          <button class="btn" type="submit">Place Order</button>
+        </form>
+
+        <div class="order-preview">
+          <h3>Preview</h3>
+          <div id="preview-items">
+            <!-- preview injected by script -->
+          </div>
+          <p class="preview-total">Total: <strong id="preview-total">₹0</strong></p>
+        </div>
+      </div>
+
+      <div class="success-message" id="successBox" style="display:none;">
+        <img src="https://cdn-icons-png.flaticon.com/512/845/845646.png" alt="success" />
+        <h3>Order Confirmed</h3>
+        <p>Thanks for shopping at PageQuest — your order is on its way 🌿</p>
+        <a class="btn" href="index.html">Back to Home</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 PageQuest</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

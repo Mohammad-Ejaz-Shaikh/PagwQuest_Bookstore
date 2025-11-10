@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PageQuest — Books</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">📗 PageQuest</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="books.html">Books</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="book-section">
+      <h2>Our Collection</h2>
+
+      <div class="search-bar">
+        <input id="searchInput" placeholder="Search books..." onkeyup="searchBooks()" />
+      </div>
+
+      <div class="book-grid" id="bookContainer">
+        <div class="book-card">
+          <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?q=80&w=800&auto=format&fit=crop" alt="AI for Beginners">
+          <h3>AI for Beginners</h3>
+          <p class="price">₹599</p>
+          <button onclick="addToCart('AI for Beginners',599,'https://images.unsplash.com/photo-1528207776546-365bb710ee93?q=80&w=800&auto=format&fit=crop')">Add to Cart</button>
+        </div>
+
+        <div class="book-card">
+          <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=800&auto=format&fit=crop" alt="Design Thinking">
+          <h3>Design Thinking</h3>
+          <p class="price">₹399</p>
+          <button onclick="addToCart('Design Thinking',399,'https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=800&auto=format&fit=crop')">Add to Cart</button>
+        </div>
+
+        <div class="book-card">
+          <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=800&auto=format&fit=crop" alt="The Art of Coding">
+          <h3>The Art of Coding</h3>
+          <p class="price">₹499</p>
+          <button onclick="addToCart('The Art of Coding',499,'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=800&auto=format&fit=crop')">Add to Cart</button>
+        </div>
+
+        <div class="book-card">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop" alt="Journey Through Time">
+          <h3>Journey Through Time</h3>
+          <p class="price">₹450</p>
+          <button onclick="addToCart('Journey Through Time',450,'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop')">Add to Cart</button>
+        </div>
+
+        <div class="book-card">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800&auto=format&fit=crop" alt="Nature Tales">
+          <h3>Nature Tales</h3>
+          <p class="price">₹349</p>
+          <button onclick="addToCart('Nature Tales',349,'https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800&auto=format&fit=crop')">Add to Cart</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 PageQuest • Green reading, gentle design</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

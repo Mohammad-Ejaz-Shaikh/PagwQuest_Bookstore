@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PageQuest — Cart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">📗 PageQuest</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="books.html">Books</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cart-section">
+      <h2>Your Cart</h2>
+
+      <div class="cart-layout">
+        <div class="cart-container" id="cart-items">
+          <!-- items injected by script.js -->
+        </div>
+
+        <aside class="cart-summary">
+          <h3>Order Summary</h3>
+          <p class="summary-line">Items: <span id="items-count">0</span></p>
+          <p class="summary-line">Total: <strong id="total">₹0</strong></p>
+          <div class="cart-buttons">
+            <button class="btn outline" onclick="clearCart()">Clear</button>
+            <a class="btn" href="checkout.html">Proceed to Checkout</a>
+          </div>
+        </aside>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 PageQuest</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
